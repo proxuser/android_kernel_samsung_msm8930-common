@@ -128,12 +128,16 @@ config CPU_FREQ_DEFAULT_GOV_BADASS
     If in doubt, say N.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c331eb... Added Lionheart Governor.
 config CPU_FREQ_DEFAULT_GOV_LIONHEART
 	bool "lionheart"
 	select CPU_FREQ_GOV_LIONHEART
 	help
 	 Use the CPUFreq governor 'lionheart' as default.
 
+<<<<<<< HEAD
 config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 
 	bool "intellidemand"
@@ -144,7 +148,15 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 >>>>>>> bdf087a... drivers/cpufreq Add:intellidemand
 =======
 >>>>>>> a4c5c36... Add BadAss Governor
+=======
+>>>>>>> 7c331eb... Added Lionheart Governor.
 endchoice
+
+config CPU_FREQ_GOV_LIONHEART
+	tristate "lionheart"
+	depends on CPU_FREQ
+	help
+	 Use the CPUFreq governor 'lionheart' as default.
 
 config CPU_FREQ_GOV_PERFORMANCE
 	tristate "'performance' governor"
