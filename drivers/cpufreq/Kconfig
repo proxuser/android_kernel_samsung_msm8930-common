@@ -110,7 +110,10 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  'interactive' governor for latency-sensitive workloads.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> a4c5c36... Add BadAss Governor
 config CPU_FREQ_DEFAULT_GOV_BADASS
   bool "badass"
   select CPU_FREQ_GOV_BADASS
@@ -124,6 +127,7 @@ config CPU_FREQ_DEFAULT_GOV_BADASS
 
     If in doubt, say N.
 
+<<<<<<< HEAD
 config CPU_FREQ_DEFAULT_GOV_LIONHEART
 	bool "lionheart"
 	select CPU_FREQ_GOV_LIONHEART
@@ -138,6 +142,8 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 	  Use the CPUFreq governor 'intellidemand' as default.
 
 >>>>>>> bdf087a... drivers/cpufreq Add:intellidemand
+=======
+>>>>>>> a4c5c36... Add BadAss Governor
 endchoice
 
 config CPU_FREQ_GOV_PERFORMANCE
@@ -211,6 +217,19 @@ config CPU_FREQ_GOV_INTERACTIVE
 	  For details, take a look at linux/Documentation/cpu-freq.
 
 	  If in doubt, say N.
+
+config CPU_FREQ_GOV_BADASS
+  tristate "'badass' cpufreq governor"
+  depends on CPU_FREQ
+  help
+    'badass' - This driver adds a dynamic cpufreq policy governor.
+    The governor does a periodic polling and
+    changes frequency based on the CPU utilization.
+    The support for this governor depends on CPU capability to
+    do fast frequency switching (i.e, very low latency frequency
+    transitions).
+
+    If in doubt, say N.
 
 config CPU_FREQ_GOV_CONSERVATIVE
 	tristate "'conservative' cpufreq governor"
