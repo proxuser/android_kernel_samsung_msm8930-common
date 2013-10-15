@@ -422,9 +422,6 @@ extern struct cpufreq_governor cpufreq_gov_conservative;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTERACTIVE)
 extern struct cpufreq_governor cpufreq_gov_interactive;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_interactive)
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_BADASS)
 extern struct cpufreq_governor cpufreq_gov_badass;
 #define CPUFREQ_DEFAULT_GOVERNOR  (&cpufreq_gov_badass)
@@ -434,18 +431,6 @@ extern struct cpufreq_governor cpufreq_gov_lionheart;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND)
 extern struct cpufreq_governor cpufreq_gov_intellidemand;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_intellidemand)
->>>>>>> bdf087a... drivers/cpufreq Add:intellidemand
-=======
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_BADASS)
-extern struct cpufreq_governor cpufreq_gov_badass;
-#define CPUFREQ_DEFAULT_GOVERNOR  (&cpufreq_gov_badass)
-<<<<<<< HEAD
->>>>>>> a4c5c36... Add BadAss Governor
-=======
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_LIONHEART)
-extern struct cpufreq_governor cpufreq_gov_lionheart;
-#define CPUFREQ_DEFAULT_GOVERNOR (&cpufreq_gov_lionheart)
->>>>>>> 7c331eb... Added Lionheart Governor.
 #endif
 
 
