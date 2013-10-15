@@ -121,15 +121,12 @@ choice
 	config DEFAULT_BFQ
 		bool "BFQ" if IOSCHED_BFQ=y
 
-<<<<<<< HEAD
-=======
         config DEFAULT_VR
                 bool "V(R)" if IOSCHED_VR=y
 
 	config DEFAULT_FIOPS
 		bool "FIOPS" if IOSCHED_FIOPS=y
 
->>>>>>> 9b56469... block: fiops ioscheduler core
 	config DEFAULT_NOOP
 		bool "No-op"
 
