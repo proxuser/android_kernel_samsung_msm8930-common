@@ -109,6 +109,11 @@ config CPU_FREQ_DEFAULT_GOV_INTERACTIVE
 	  loading your cpufreq low-level hardware driver, using the
 	  'interactive' governor for latency-sensitive workloads.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> a4c5c36... Add BadAss Governor
 config CPU_FREQ_DEFAULT_GOV_BADASS
   bool "badass"
   select CPU_FREQ_GOV_BADASS
@@ -122,13 +127,17 @@ config CPU_FREQ_DEFAULT_GOV_BADASS
 
     If in doubt, say N.
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 7c331eb... Added Lionheart Governor.
 config CPU_FREQ_DEFAULT_GOV_LIONHEART
 	bool "lionheart"
 	select CPU_FREQ_GOV_LIONHEART
 	help
 	 Use the CPUFreq governor 'lionheart' as default.
 
-
+<<<<<<< HEAD
 config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 
 	bool "intellidemand"
@@ -136,6 +145,11 @@ config CPU_FREQ_DEFAULT_GOV_INTELLIDEMAND
 	help
 	  Use the CPUFreq governor 'intellidemand' as default.
 
+>>>>>>> bdf087a... drivers/cpufreq Add:intellidemand
+=======
+>>>>>>> a4c5c36... Add BadAss Governor
+=======
+>>>>>>> 7c331eb... Added Lionheart Governor.
 endchoice
 
 config CPU_FREQ_GOV_LIONHEART
@@ -252,6 +266,7 @@ config CPU_FREQ_GOV_CONSERVATIVE
 
 	  If in doubt, say N.
 
+<<<<<<< HEAD
 config SEC_DVFS
 	bool "DVFS job"
 	default n
@@ -262,6 +277,7 @@ config CPU_FREQ_GOV_INTELLIDEMAND
     depends on CPU_FREQ
 
 
+>>>>>>> bdf087a... drivers/cpufreq Add:intellidemand
 menu "x86 CPU frequency scaling drivers"
 depends on X86
 source "drivers/cpufreq/Kconfig.x86"
