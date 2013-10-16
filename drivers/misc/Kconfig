@@ -764,6 +764,21 @@ config BCM2079X_NFC_I2C
 	  To compile this driver as a module, choose m here. The module will
 	  be called bcm2079x-i2c.
 
+config GENERIC_BLN
+	bool "Generic BLN support for backlight notification"
+	depends on SYSFS && EXPERIMENTAL
+	default y
+	help
+		Say Y here to enable the backlight notification
+		for android led-notification (modified liblight needed)
+         
+config GENERIC_BLN_EMULATE_BUTTONS_LED
+	bool "Emulate buttons led"
+	depends on GENERIC_BLN && EXPERIMENTAL
+	default n
+	help
+		Say Y here to simulate buttons led
+
 config NFC_PMIC_CLK
         bool "Enable PMIC-CLK for NFC"
         default n
